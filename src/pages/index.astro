@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../components/Iconos/LinkedIn.astro";
+import SocialPill from "../components/Iconos/SocialPill.astro";
+import GithubIcon from "../components/Iconos/Github.astro";
+import MailIcon from "../components/Iconos/Mail.astro";
+import Experience from "../components/Experience.astro";
+import Section from "../components/Section.astro";
+import Briefcase from "../components/Iconos/Briefcase.astro";
+import Code from "../components/Iconos/Code.astro";
+import Projects from "../components/Projects.astro";
+---
+
+<Layout
+  title="Isaac Lolade portfolio's - Software developer with 2 years experience"
+  description="Hire Isaac to create your web or mobile application. Specilized in Kotlin "
+>
+  <main class="px-4">
+    <Section class="py-44 pb-24">
+      <h1
+        class="text-white text-3xl md:text-4xl lg:tex
+	  t-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
+        Hey, im Isaac <a
+          href="https://www.linkedin.com/in/isaac-lolade-kehinde-adekeye-b3684316b/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Available for work</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl text-2xl text-wrap max-w-[700px]">
+        <span>+2 years experience.</span>
+        <span class="text-yellow-200/90">Software developer and Athlete.</span
+        ><span class="text-red-200/90"> From Mallorca, Spain.</span>
+        <span class="opacity-75">Especialized in developing applications</span>
+      </h2>
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill
+          href="https://www.linkedin.com/in/isaac-lolade-kehinde-adekeye-b3684316b/"
+        >
+          <LinkedInIcon class="size-4 md:size-6" />
+           LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/IsaacLolade">
+          <GithubIcon class="size-4 md:size-6" />
+           Github
+        </SocialPill>
+        <SocialPill href="mailto:isaaclolade12@gmail.com">
+          <MailIcon class="size-4 md:size-6" />
+           Isaaclolade12@gmail.com
+        </SocialPill>
+      </nav>
+    </Section>
+    <Section id="experience">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Briefcase class="size-7" />Experience
+      </h2>
+      <Experience />
+    </Section>
+    <Section id="projects">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Code class="size-7" />Projects
+      </h2>
+      <Projects />
+    </Section>
+  </main>
+</Layout>
